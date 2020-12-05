@@ -54,13 +54,13 @@ function isRecordValid(record) {
 
 function main() {
     let count = 0
-    userInpObjList = userInput.forEach(el => {
+    userInput.forEach(el => {
         tempObj = {}
         el.split(' ').forEach(em => {
             tempObj[em.split(':')[0]] = em.split(':')[1]
         })
         if(isRecordValid(tempObj)) count++
     })
-    console.log('count', count)
+    console.log('answer is = ', count)
 }
 main()
