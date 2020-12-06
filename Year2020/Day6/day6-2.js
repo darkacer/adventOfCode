@@ -19,9 +19,7 @@ function countCommonYesAnswers(stringList) {
     return baseAnswers.size
 }
 
-const reducer = (acc, elem) => {
-    return acc + countCommonYesAnswers(elem);
-}
+const reducer = (acc, elem) => acc + countCommonYesAnswers(elem);
 
 function main() {
     console.log('answer = ', userInput.reduce(reducer, 0))
