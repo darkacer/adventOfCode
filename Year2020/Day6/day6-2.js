@@ -13,8 +13,7 @@ function countCommonYesAnswers(stringList) {
     let baseAnswers = new Set(stringList[0]);
     // rest of the strings
     stringList.forEach(element => {
-        elemSet = new Set(element)
-        baseAnswers = getCommonFromSets(baseAnswers, elemSet)
+        baseAnswers = getCommonFromSets(baseAnswers, new Set(element))
     });
     return baseAnswers.size
 }

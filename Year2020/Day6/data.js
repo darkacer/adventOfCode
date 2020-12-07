@@ -472,5 +472,5 @@ const userInput = [
     ['nxhayv','npqfohbrl','kegchuidstwnm','nzhlj']
     ]
     
-    exports.getData = () => userInput;
+exports.getData = () => userInput;
     
